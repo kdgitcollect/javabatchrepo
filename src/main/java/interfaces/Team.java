@@ -1,16 +1,20 @@
 package main.java.interfaces;
 
-public class Team implements BasketballTeam, FootballTeam {
+//public class Team implements BasketballTeam,FootballTeam, FootballTeam.FootballTeam1 {
 
+public class Team implements BasketballTeam,FootballTeam {
 	private String name = null;
 	
 	public Team(String name) {
 		this.name = name;
+//		System.out.println(FootballTeam.fname);
+		FootballTeam.super.show();
 	}
 
 	@Override
 	public void printFootballName() {
 		System.out.println("Football Team: \"" + name + " F.C.\"");
+		FootballTeam.super.show();
 	}
 
 	@Override
