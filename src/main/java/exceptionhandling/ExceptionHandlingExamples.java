@@ -1,8 +1,12 @@
 package main.java.exceptionhandling;
 
 public class ExceptionHandlingExamples {
+
+
 	public static void main(String args[])
 	   {
+	         System.out.println ("Result: ");
+
 //	      try{
 //	         int num1=30, num2=0;
 //	         int output=num1/num2;
